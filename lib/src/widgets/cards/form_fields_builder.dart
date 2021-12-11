@@ -13,6 +13,7 @@ List<Widget> formFieldsBuilder(List<UserFormField> formFields, _nameControllers,
           // interval: _fieldAnimationIntervals[widget.formFields.indexOf(formField)],
           loadingController: loadingController,
           width: width,
+          obscureText: (formField.userType == LoginUserType.password),
           labelText: formField.displayName,
           prefixIcon:
               formField.icon ?? const Icon(FontAwesomeIcons.solidUserCircle),
